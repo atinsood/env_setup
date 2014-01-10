@@ -5,6 +5,9 @@ export CLICOLOR=1
 export TERM=xterm-256color
 
 set -o vi #setting the vi mode
+
+export WORKON_HOME=/Users/asood/code/python_virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh #Invoke virtual env
 #===============
 # ALIASES
 #===============
