@@ -6,7 +6,7 @@ export TERM=xterm-256color
 
 set -o vi #setting the vi mode
 #===============
-ALIASES
+# ALIASES
 #===============
 alias ls='ls -G'
 
