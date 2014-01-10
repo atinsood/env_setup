@@ -8,6 +8,21 @@ set -o vi #setting the vi mode
 #===============
 # ALIASES
 #===============
+# -- GENERIC
 alias ls='ls -G'
 
+alias ..='cd ..'         # Go up one directory
+alias ...='cd ../..'     # Go up two directories
+alias ....='cd ../../..' # Go up three directories
 
+alias        md='mkdir -p'
+alias        rd='rmdir'
+
+# Get rid of those pesky .DS_Store files recursively
+alias dsclean='find . -type f -name .DS_Store -print0 | xargs -0 rm'
+
+# -- MAVEN
+alias mci='mvn clean install'
+alias mi='mvn install'
+alias mc='mvn clean'
+alias mcisk='mci -Dmaven.test.skip=true'
